@@ -6,15 +6,19 @@ const catNoise = document.getElementById('cat-sound');
 const dogNoise = document.getElementById('dog-sound');
 const horseNoise = document.getElementById('horse-sound');
 
+function playAnimalNoise(Noise) {
+  Noise.play();
+}
+
 
 catPic.addEventListener('click', () => {
-  catNoise.play();
+  playAnimalNoise(catNoise);
 });
 
 dogPic.addEventListener('click', () => {
-  dogNoise.play();
+  playAnimalNoise(dogNoise);
 });
 
 horsePic.addEventListener('click', () => {
-  horseNoise.play();
+  playAnimalNoise(horseNoise);
 });
