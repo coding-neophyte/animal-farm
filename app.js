@@ -1,8 +1,20 @@
-// import functions and grab DOM elements
+const catPic = document.getElementById('cat-photo');
+const dogPic = document.getElementById('dog-photo');
+const horsePic = document.getElementById('horse-photo');
 
-// initialize state
+const catNoise = document.getElementById('cat-sound');
+const dogNoise = document.getElementById('dog-sound');
+const horseNoise = document.getElementById('horse-sound');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+
+catPic.addEventListener('click', () => {
+  catNoise.play();
+});
+
+dogPic.addEventListener('click', () => {
+  dogNoise.play();
+});
+
+horsePic.addEventListener('click', () => {
+  horseNoise.play();
+});
